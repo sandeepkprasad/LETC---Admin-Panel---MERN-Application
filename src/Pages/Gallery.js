@@ -17,7 +17,7 @@ const Gallery = () => {
   }, []);
 
   useEffect(() => {
-    let url = "https://www.sandeepkumar.me/gallery/getgallery";
+    let url = "https://www.cwtrust-india.com/gallery/getgallery";
     axios
       .get(url)
       .then((res) => setGallery(res.data))
@@ -26,7 +26,7 @@ const Gallery = () => {
   }, []);
 
   const handleUpload = () => {
-    let url = "https://www.sandeepkumar.me/gallery/upload";
+    let url = "https://www.cwtrust-india.com/gallery/upload";
     const formdata = new FormData();
     formdata.append("file", file);
 
@@ -39,7 +39,7 @@ const Gallery = () => {
   };
 
   const deleteGallery = async (id) => {
-    let url = `https://www.sandeepkumar.me/gallery/deletegallery/${id}`;
+    let url = `https://www.cwtrust-india.com/gallery/deletegallery/${id}`;
     const response = await fetch(url, {
       method: "DELETE",
       headers: {
@@ -92,7 +92,7 @@ const Gallery = () => {
                 <img
                   width={250}
                   height={250}
-                  src={`http:https://www.sandeepkumar.me/galleryimage/${item.image}`}
+                  src={`http:https://www.cwtrust-india.com/galleryimage/${item.image}`}
                   alt="..."
                   className="rounded-5 mb-2"
                 />

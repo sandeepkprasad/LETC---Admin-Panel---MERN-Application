@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    let url = "https://www.sandeepkumar.me/user/login";
+    let url = "https://www.cwtrust-india.com/user/login";
     const response = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

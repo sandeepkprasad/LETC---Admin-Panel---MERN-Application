@@ -7,7 +7,7 @@ const LetcState = (props) => {
   const [exam, setExam] = useState([]);
 
   const getEnquiry = async () => {
-    let url = "https://www.sandeepkumar.me/enquiry/getenquiry";
+    let url = "https://www.cwtrust-india.com/enquiry/getenquiry";
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -20,7 +20,7 @@ const LetcState = (props) => {
   };
 
   const getNotification = async () => {
-    let url = "https://www.sandeepkumar.me/notification/usernotification";
+    let url = "https://www.cwtrust-india.com/notification/usernotification";
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -34,7 +34,7 @@ const LetcState = (props) => {
   };
 
   const addNotification = async (notification) => {
-    let url = "https://www.sandeepkumar.me/notification/addnotification";
+    let url = "https://www.cwtrust-india.com/notification/addnotification";
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -51,7 +51,7 @@ const LetcState = (props) => {
   };
 
   const deleteNotification = async (id) => {
-    let url = `https://www.sandeepkumar.me/notification/deletenotification/${id}`;
+    let url = `https://www.cwtrust-india.com/notification/deletenotification/${id}`;
     const response = await fetch(url, {
       method: "DELETE",
       headers: {
@@ -69,7 +69,7 @@ const LetcState = (props) => {
   };
 
   const getExams = async () => {
-    let url = "https://www.sandeepkumar.me/exams/allexams";
+    let url = "https://www.cwtrust-india.com/exams/allexams";
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -82,7 +82,7 @@ const LetcState = (props) => {
   };
 
   const addexam = async (text, link) => {
-    let url = "https://www.sandeepkumar.me/exams/addexam";
+    let url = "https://www.cwtrust-india.com/exams/addexam";
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -99,7 +99,7 @@ const LetcState = (props) => {
   };
 
   const deleteExam = async (id) => {
-    let url = `https://www.sandeepkumar.me/exams/deleteexam/${id}`;
+    let url = `https://www.cwtrust-india.com/exams/deleteexam/${id}`;
     const response = await fetch(url, {
       method: "DELETE",
       headers: {

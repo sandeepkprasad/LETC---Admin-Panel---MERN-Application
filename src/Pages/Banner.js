@@ -17,7 +17,7 @@ const Banner = () => {
   }, []);
 
   useEffect(() => {
-    let url = "https://www.sandeepkumar.me/banner/getbanner";
+    let url = "https://www.cwtrust-india.com/banner/getbanner";
     axios
       .get(url)
       .then((res) => setBanner(res.data))
@@ -26,7 +26,7 @@ const Banner = () => {
   }, []);
 
   const handleUpload = () => {
-    let url = "https://www.sandeepkumar.me/banner/upload";
+    let url = "https://www.cwtrust-india.com/banner/upload";
     const formdata = new FormData();
     formdata.append("file", file);
 
@@ -39,7 +39,7 @@ const Banner = () => {
   };
 
   const deleteBanner = async (id) => {
-    let url = `https://www.sandeepkumar.me/banner/deletebanner/${id}`;
+    let url = `https://www.cwtrust-india.com/banner/deletebanner/${id}`;
     const response = await fetch(url, {
       method: "DELETE",
       headers: {
@@ -94,7 +94,7 @@ const Banner = () => {
                 <img
                   width={500}
                   height={250}
-                  src={`https://www.sandeepkumar.me/bannerimage/${item.image}`}
+                  src={`https://www.cwtrust-india.com/bannerimage/${item.image}`}
                   alt="..."
                   className="rounded-5 mb-2"
                 />
