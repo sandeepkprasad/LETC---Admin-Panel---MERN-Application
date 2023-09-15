@@ -47,6 +47,7 @@ const Gallery = () => {
       },
     });
 
+    // eslint-disable-next-line
     const json = await response.json();
 
     const newGallery = gallery.filter((item) => {

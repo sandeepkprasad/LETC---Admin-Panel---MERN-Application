@@ -10,7 +10,8 @@ const Notification = () => {
 
   useEffect(() => {
     getNotification();
-  });
+    // eslint-disable-next-line
+  }, []);
 
   useEffect(() => {
     if (localStorage.getItem("letctoken")) {

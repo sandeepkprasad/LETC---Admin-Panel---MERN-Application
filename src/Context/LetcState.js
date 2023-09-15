@@ -60,6 +60,7 @@ const LetcState = (props) => {
       },
     });
 
+    // eslint-disable-next-line
     const json = await response.json();
 
     const newNotification = noti.filter((item) => {

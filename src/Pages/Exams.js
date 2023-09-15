@@ -10,7 +10,8 @@ const Exams = () => {
 
   useEffect(() => {
     getExams();
-  });
+    // eslint-disable-next-line
+  }, []);
 
   useEffect(() => {
     if (localStorage.getItem("letctoken")) {

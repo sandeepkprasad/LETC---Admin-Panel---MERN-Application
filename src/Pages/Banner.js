@@ -47,6 +47,7 @@ const Banner = () => {
       },
     });
 
+    // eslint-disable-next-line
     const json = await response.json();
 
     const newBanner = banner.filter((item) => {

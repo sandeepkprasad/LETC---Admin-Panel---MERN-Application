@@ -8,7 +8,8 @@ const Enquiry = () => {
 
   useEffect(() => {
     getEnquiry();
-  });
+    // eslint-disable-next-line
+  }, []);
 
   useEffect(() => {
     if (localStorage.getItem("letctoken")) {
