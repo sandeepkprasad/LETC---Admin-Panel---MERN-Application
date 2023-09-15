@@ -94,7 +94,7 @@ const Banner = () => {
                 <img
                   width={500}
                   height={250}
-                  src={`https://www.cwtrust-india.com/bannerimage/${item.image}`}
+                  src={item.image}
                   alt="..."
                   className="rounded-5 mb-2"
                 />

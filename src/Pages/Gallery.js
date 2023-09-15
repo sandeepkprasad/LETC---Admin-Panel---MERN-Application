@@ -92,7 +92,7 @@ const Gallery = () => {
                 <img
                   width={250}
                   height={250}
-                  src={`http:https://www.cwtrust-india.com/galleryimage/${item.image}`}
+                  src={item.image}
                   alt="..."
                   className="rounded-5 mb-2"
                 />
